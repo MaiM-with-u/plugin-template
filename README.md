@@ -94,5 +94,4 @@ python -m pytest tests/
 
 ## 许可证
 
-MIT License - 查看LICENSE文件了解详情。
-```
+[MIT License](./License) - 查看LICENSE文件了解详情。
