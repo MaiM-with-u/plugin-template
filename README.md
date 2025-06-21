@@ -34,7 +34,7 @@
 
 ```json
 {
-  "manifest_version": 3,
+  "manifest_version": 1,
   "name": "你的插件名称",
   "version": "1.0.0",
   "description": "插件描述",
