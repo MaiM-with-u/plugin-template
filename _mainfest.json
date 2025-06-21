@@ -9,7 +9,6 @@
   },
   "license": "MIT",
   "host_application": {
-    "name": "MaiBot",
     "min_version": "0.8.0",
     "max_version": ""
   },

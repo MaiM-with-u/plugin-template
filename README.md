@@ -43,7 +43,6 @@
     "url": "作者主页"
   },
   "host_application": {
-    "name": "MaiBot",
     "min_version": "0.8.0",
     "max_version": ""
   }
