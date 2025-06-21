@@ -32,6 +32,10 @@
         "default": "Hello World",
         "description": "示例文本配置"
       }
+    },
+    "components": {
+      "actions": ["sample_action"],
+      "commands": ["sample"]
     }
   }
 }

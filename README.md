@@ -25,8 +25,7 @@
 
 3. **添加组件**
    - Actions: 处理用户交互的动作
-   - Processors: 数据处理器
-   - Tools: 工具函数
+   - Commands: 处理用户命令的组件
 
 ### 3. Manifest文件说明
 
@@ -48,6 +47,7 @@
   }
 }
 ```
+
 ### 4. 版本兼容性
 
 - 当前模板支持MaiBot 0.8.0及以上版本
@@ -62,6 +62,8 @@
 # 验证manifest文件
 python scripts/validate_manifest.py
 
+# 打包插件
+python scripts/package_plugin.py
 ```
 
 ## 插件组件类型
@@ -69,8 +71,53 @@ python scripts/validate_manifest.py
 ### Actions（动作组件）
 处理用户交互，响应特定的触发条件。
 
-### Tools（工具组件）
-提供可调用的工具函数。
+示例：
+```python
+class SampleAction(BaseAction):
+    action_name = "sample_action"
+    activation_keywords = ["示例", "模板"]
+    
+    async def execute(self, context):
+        # 动作执行逻辑
+        pass
+```
+
+### Commands（命令组件）
+处理用户发出的命令，支持子命令和参数解析。
+
+示例：
+```python
+class SampleCommand(BaseCommand):
+    command_name = "sample"
+    aliases = ["模板", "示例"]
+    
+    async def execute(self, args, context):
+        # 命令执行逻辑
+        pass
+```
+
+## 使用示例
+
+### 命令使用示例
+
+```
+# 基础命令
+sample help
+
+# 子命令
+sample hello
+sample hello 张三
+sample echo 这是测试文本
+```
+
+### 动作触发示例
+
+当用户输入包含激活关键词时，动作会自动触发：
+
+```
+用户: 这是一个示例
+# SampleAction会被触发
+```
 
 ## 最佳实践
 
@@ -79,6 +126,7 @@ python scripts/validate_manifest.py
 3. **资源管理**: 在on_unload中清理资源
 4. **配置验证**: 验证插件配置的有效性
 5. **文档完善**: 为所有组件提供清晰的文档
+6. **命令设计**: 提供清晰的命令结构和帮助信息
 
 ## 测试
 
@@ -90,4 +138,4 @@ python -m pytest tests/
 
 ## 许可证
 
-[MIT License](./LICENSE) - 查看LICENSE文件了解详情。
+MIT License - 查看LICENSE文件了解详情。
