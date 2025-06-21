@@ -3,7 +3,7 @@
 > 这是一个官方的 MaiBot 插件开发模板仓库，遵循最新的官方文档标准，提供了完整的项目结构和最佳实践示例。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![MaiBot](https://img.shields.io/badge/MaiBot-Plugin-green.svg)](https://docs.mai-mai.org/)
 
 ## ✨ 特性
