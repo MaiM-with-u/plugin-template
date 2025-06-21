@@ -56,7 +56,7 @@ plugin-template/
    - 点击右上角的 "Use this template" 按钮
    - 或者直接克隆此仓库：
    ```bash
-   git clone https://github.com/your-username/plugin-template.git my-plugin
+   git clone https://github.com/MaiM-with-u/plugin-template.git my-plugin
    cd my-plugin
    ```
 
