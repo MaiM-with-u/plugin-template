@@ -70,9 +70,6 @@ python scripts/validate_manifest.py
 ### Actions（动作组件）
 处理用户交互，响应特定的触发条件。
 
-### Processors（处理器组件）
-处理和转换数据流。
-
 ### Tools（工具组件）
 提供可调用的工具函数。
 
