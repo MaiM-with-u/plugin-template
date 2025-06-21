@@ -1,0 +1,11 @@
+# MaiBot 插件依赖
+# 这里列出你的插件所需要的第三方Python包
+
+# 示例依赖（根据实际需要修改）
+# requests>=2.28.0
+# aiohttp>=3.8.0
+# pydantic>=2.0.0
+
+# 开发和测试依赖
+pytest>=7.0.0
+pytest-asyncio>=0.21.0

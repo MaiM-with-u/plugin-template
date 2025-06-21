@@ -1,0 +1,44 @@
+# 配置示例文件
+# 复制此文件为 config.toml 并修改相应配置
+
+[plugin]
+# 插件基本配置
+name = "example_plugin"
+version = "1.0.0"
+debug = false
+
+[plugin.greeting]
+# greeting_action 相关配置
+enabled = true
+default_message = "你好！欢迎使用示例插件！"
+custom_greetings = [
+    "早上好！",
+    "下午好！",
+    "晚上好！"
+]
+
+[plugin.smart_response]
+# smart_response_action 相关配置
+enabled = true
+confidence_threshold = 0.7
+max_response_length = 200
+use_ai_enhancement = false
+
+[plugin.commands]
+# Command相关配置
+help_enabled = true
+config_enabled = true
+admin_only_config = true
+
+[plugin.features]
+# 功能开关
+auto_greet_new_users = true
+log_all_interactions = false
+cache_responses = true
+cache_ttl = 3600  # 缓存过期时间（秒）
+
+[plugin.advanced]
+# 高级配置
+rate_limit_per_user = 10  # 每用户每分钟请求限制
+enable_metrics = true
+metrics_interval = 300  # 指标收集间隔（秒）

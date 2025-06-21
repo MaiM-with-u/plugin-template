@@ -3,31 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
 *.egg
-MANIFEST
+*.egg-info/
+dist/
+build/
+.pytest_cache/
 
-# PyCharm
-.idea/
-
-# VS Code
-.vscode/
-
-# Environment
+# 环境配置
 .env
 .venv
 env/
@@ -36,29 +18,31 @@ ENV/
 env.bak/
 venv.bak/
 
-# Logs
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 日志
 *.log
 logs/
 
-# OS
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Plugin specific
-config/
-data/
+# 临时文件
+*.tmp
+*.temp
 temp/
-cache/
 
-# Testing
-.pytest_cache/
+# 配置文件（避免敏感配置泄露）
+config.toml
+*.secret
+*.key
+
+# 测试覆盖率
 .coverage
 htmlcov/
 
-# Documentation
-docs/_build/
+# 操作系统
+.DS_Store
+Thumbs.db

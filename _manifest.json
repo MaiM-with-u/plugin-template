@@ -1,0 +1,47 @@
+{
+  "manifest_version": 1,
+  "name": "MaiBot插件模板",
+  "version": "1.0.0",
+  "description": "MaiBot标准插件模板，展示Action/Command/配置的最佳实践，符合官方规范",
+  "author": {
+    "name": "MaiBot开发团队",
+    "url": "https://github.com/your-org"
+  },
+  "license": "MIT",
+  "homepage_url": "https://github.com/your-org/maibot-plugin-template",
+  "repository_url": "https://github.com/your-org/maibot-plugin-template",
+  "keywords": ["template", "example", "demo", "starter", "开发模板"],
+  "categories": ["utility", "development", "template"],
+  "host_application": {
+    "min_version": "2.0.0",
+    "max_version": "4.0.0"
+  },
+  "default_locale": "zh-CN",
+  "locales_path": "_locales",
+  "plugin_info": {
+    "is_built_in": false,
+    "plugin_type": "general",
+    "components": [
+      {
+        "type": "action",
+        "name": "greeting_action",
+        "description": "智能问候Action，展示激活控制和参数处理"
+      },
+      {
+        "type": "action",
+        "name": "smart_response_action",
+        "description": "智能回复Action，展示配置驱动的行为"
+      },
+      {
+        "type": "command",
+        "name": "help_command",
+        "description": "帮助命令，展示参数捕获和错误处理"
+      },
+      {
+        "type": "command",
+        "name": "config_command",
+        "description": "配置管理命令，展示复杂参数解析"
+      }
+    ]
+  }
+}
